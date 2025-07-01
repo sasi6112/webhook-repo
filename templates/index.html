@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Webhook Events</title>
+    <meta http-equiv="refresh" content="15">
+</head>
+<body>
+    <h2>GitHub Events</h2>
+    <ul>
+        {% for item in data %}
+        <li>{{ item.author }} {{ item.action }} on {{ item.timestamp }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
